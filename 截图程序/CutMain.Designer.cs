@@ -1,6 +1,6 @@
 ﻿namespace 截图程序
 {
-    partial class CutPic
+    partial class CutMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CutPic));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CutMain));
             this.SuspendLayout();
             // 
-            // CutPic
+            // CutMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(732, 447);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "CutPic";
-            this.Opacity = 0.3D;
+            this.Name = "CutMain";
+            this.Opacity = 0.4D;
             this.Text = "双击界面截图";
-            this.Load += new System.EventHandler(this.CutPic_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.CutPic_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CutPic_KeyDown);
             this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.CutPic_MouseDoubleClick);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CutPic_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CutPic_MouseMove);
             this.ResumeLayout(false);
 
         }
