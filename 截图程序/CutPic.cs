@@ -33,7 +33,7 @@ namespace 截图程序
             SaveFileDialog save = new SaveFileDialog();
             //打开保存
             save.ShowDialog();
-            bit.Save(save.FileName,System.Drawing.Imaging.ImageFormat.Bmp);
+            bit.Save(save.FileName+".bmp",System.Drawing.Imaging.ImageFormat.Bmp);
 
             //截完图后,激活主窗体
             NormalMain?.Invoke();
