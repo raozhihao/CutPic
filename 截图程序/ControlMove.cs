@@ -31,17 +31,18 @@ namespace 截图程序
         /// </summary>
         /// <param name="sender">控件</param>
         /// <param name="e"></param>
-        public static void MouseMove(object sender, MouseEventArgs e)
+        public static void MouseMove(Control sender, MouseEventArgs e)
         {
-            Control c = sender as Control;
             if (e.Button == MouseButtons.Left)
             {
                 int px = Cursor.Position.X - pt.X;
                 int py = Cursor.Position.Y - pt.Y;
-                c.Location = new Point(c.Location.X + px, c.Location.Y + py);
+                sender.Location = new Point(sender.Location.X + px, sender.Location.Y + py);
 
                 pt = Cursor.Position;
             }
         }
+
+
     }
 }

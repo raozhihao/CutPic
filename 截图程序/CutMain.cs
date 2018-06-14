@@ -57,6 +57,7 @@ namespace 截图程序
                 ///使主窗体显示出来
                 NormalMain?.Invoke();
             }
+
         }
 
        

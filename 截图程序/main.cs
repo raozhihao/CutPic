@@ -19,25 +19,6 @@ namespace 截图程序
         }
 
        
-
-        /// <summary>
-        /// 鼠标按下事件
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void main_MouseDown(object sender, MouseEventArgs e)
-        {
-            ControlMove.MouseDown();
-        }
-        /// <summary>
-        /// 鼠标移动事件
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void main_MouseMove(object sender, MouseEventArgs e)
-        {
-            ControlMove.MouseMove(this, e);
-        }
         /// <summary>
         /// 开始截图
         /// </summary>
@@ -84,6 +65,9 @@ namespace 截图程序
             this.WindowState = FormWindowState.Minimized;
         }
 
-
+        private void Main_Load(object sender, EventArgs e)
+        {
+            MoveFrom m = new 截图程序.MoveFrom(this);
+        }
     }
 }
