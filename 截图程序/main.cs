@@ -67,7 +67,7 @@ namespace 截图程序
 
         private void Main_Load(object sender, EventArgs e)
         {
-            MoveFrom m = new 截图程序.MoveFrom(this);
+            MoveFrom m = new MoveFrom(this,null);
         }
     }
 }
